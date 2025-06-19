@@ -1,46 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
+body {margin: 0;padding: 0;}
 
+#omou {
+    position: relative;
 }
 
-.main{
+#omou video {
+    height: 100vh;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(wp1810645.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 109vh;
+    background-position:absolute;
+    z-index:10;
+    object-fit: cover;
 }
 
-.navbar{
-    width: 200px;
-    height: 70px;
-    margin: auto;
+#omou .content {
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    position:absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo{
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-right: 20px;
-    float: right;
-    padding-top: 10px;
-}
-
-.text{
-    color: rgb(152, 142, 142);
-    font-size: 39px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 20px;
-    float: left;
-    padding-top: 275px;
-    width: 200px;
-    height: 70px;
-    margin: auto;
+#omou .content h1 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
